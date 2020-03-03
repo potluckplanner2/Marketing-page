@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  font-family: "Kalam";
+
+  html {
+    font-size: 62.5%;
+  }
+}
+* {
+  //   border: 1px solid grey;
+}
+@mobile: (max-width: 500px);
+@tablet: (max-width: 1000px);
+//fonts
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lobster";
+  .logo {
+    padding-left: 5%;
+    display: flex;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    @media @mobile {
+      width: 80%;
+    }
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+    } //anchor ends here
+  } //nav ends here
+} //header ends here
+
+.btn {
+  padding-top: 2%;
+  text-align: center;
+  display: block;
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 25%;
+
+  @media @mobile {
+    width: 100%;
+    margin-top: 0;
+    height: 70px;
+    padding-top: 8%;
+  }
+  @media @tablet {
+    margin-top: 0%;
+    width: 45%;
+  }
+}
+
+.topContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @media @mobile {
+    flex-direction: column-reverse;
+  }
+  .half1 {
+    width: 50%;
+    font-size: 1.5rem;
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  img {
+    @media @mobile {
+      width: 100%;
+    }
+    width: 50%;
+  }
+}
+
+.mdlSection {
+  ul {
+    font-size: 1.5rem;
+    padding: 3% 20%;
+    line-height: 3;
+    @media @mobile {
+      line-height: 1.5;
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}
+
+.endSection {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}

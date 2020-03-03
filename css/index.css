@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+  font-family: "Kalam";
+}
+body html {
+  font-size: 62.5%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lobster";
+}
+header .logo {
+  padding-left: 5%;
+  display: flex;
+}
+header .logo h2 {
+  font-size: 2rem;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
+}
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  padding-top: 2%;
+  text-align: center;
+  display: block;
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+    margin-top: 0;
+    height: 70px;
+    padding-top: 8%;
+  }
+}
+@media (max-width: 1000px) {
+  .btn {
+    margin-top: 0%;
+    width: 45%;
+  }
+}
+.topContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .topContainer {
+    flex-direction: column-reverse;
+  }
+}
+.topContainer .half1 {
+  width: 50%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .topContainer .half1 {
+    width: 100%;
+  }
+}
+.topContainer img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .topContainer img {
+    width: 100%;
+  }
+}
+.mdlSection ul {
+  font-size: 1.5rem;
+  padding: 3% 20%;
+  line-height: 3;
+}
+@media (max-width: 500px) {
+  .mdlSection ul {
+    line-height: 1.5;
+  }
+}
+.mdlSection img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+@media (max-width: 500px) {
+  .mdlSection img {
+    width: 100%;
+  }
+}
+.endSection {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
