@@ -1,6 +1,7 @@
 body {
   width: 100%;
   font-family: "Kalam";
+  background-color: #fff5d1;
 }
 body html {
   font-size: 62.5%;
@@ -10,10 +11,12 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Lobster";
+  background-color: #241e4e;
 }
 header .logo {
   padding-left: 5%;
   display: flex;
+  color: #ffd046;
 }
 header .logo h2 {
   font-size: 2rem;
@@ -28,24 +31,24 @@ header nav {
     width: 80%;
   }
 }
-header nav a {
+header nav button {
   font-size: 1.5rem;
   text-decoration: none;
-  color: black;
 }
-.btn {
-  padding-top: 2%;
+button {
   text-align: center;
-  display: block;
-  background-color: black;
-  color: white;
+  background-color: #241e4e;
+  color: #ffd046;
+  font-family: "Lobster";
+  border: none;
+  font-size: 1.5rem;
+  text-decoration: underline;
   width: 30%;
-  height: 35px;
+  height: 50px;
   margin: 0 auto;
-  margin-top: 25%;
 }
 @media (max-width: 500px) {
-  .btn {
+  button {
     width: 100%;
     margin-top: 0;
     height: 70px;
@@ -53,7 +56,7 @@ header nav a {
   }
 }
 @media (max-width: 1000px) {
-  .btn {
+  button {
     margin-top: 0%;
     width: 45%;
   }
@@ -63,6 +66,7 @@ header nav a {
   display: flex;
   align-items: center;
   text-align: center;
+  color: #ce6c47;
 }
 @media (max-width: 500px) {
   .topContainer {
@@ -78,6 +82,11 @@ header nav a {
     width: 100%;
   }
 }
+.topContainer .half1 button {
+  font-size: 2rem;
+  background-color: #ce6c47;
+  color: #fff5d1;
+}
 .topContainer img {
   width: 50%;
 }
@@ -85,6 +94,9 @@ header nav a {
   .topContainer img {
     width: 100%;
   }
+}
+.mdlSection {
+  color: #ffd046;
 }
 .mdlSection ul {
   font-size: 1.5rem;
@@ -111,5 +123,41 @@ header nav a {
   width: 85%;
   margin: 0 auto;
   line-height: 1.6;
+  font-size: 1.5rem;
+}
+.nav2 {
+  font-family: "Lobster";
+  text-align: center;
+  margin-top: 3%;
+  font-size: 2rem;
+}
+.Profile {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.Profile .Person {
+  width: 30%;
+  min-height: 70vh;
+  background: green;
+  color: white;
+  text-align: center;
+  border: 10px solid red;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  font-family: "Lobster";
+}
+.Profile .Person img {
+  width: 100%;
+  min-height: 50%;
+  border-radius: 25px;
+}
+.Profile .Person p {
+  width: 70%;
+  padding: 1%;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  font-family: "Kalam";
   font-size: 1.5rem;
 }

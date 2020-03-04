@@ -1,38 +1,26 @@
 body {
   width: 100%;
   font-family: "Kalam";
-  background-color: @white;
-  // h1,
-  // h2,
-  // h3 {
-  //   color: @red;
-  // }
+
   html {
     font-size: 62.5%;
   }
 }
-
+// * {
+//   //   border: 1px solid grey;
+// }
 @mobile: (max-width: 500px);
 @tablet: (max-width: 1000px);
-
-//colors
-@blue: #241e4e;
-@red: #960200;
-@orange: #ce6c47;
-@yellow: #ffd046;
-@white: #fff5d1;
+//fonts
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Lobster";
-  // background-color: @blue;
   .logo {
     padding-left: 5%;
     display: flex;
-    // color: @yellow;
-
     h2 {
       font-size: 2rem;
     }
@@ -48,22 +36,23 @@ header {
     button {
       font-size: 1.5rem;
       text-decoration: none;
-      // color: black;
+      color: black;
     } //anchor ends here
   } //nav ends here
 } //header ends here
 
 button {
+  padding-top: 2%;
   text-align: center;
-  // display: block;
-  background-color: @black;
-  color: white;
+  display: block;
+  background-color: white;
+  color: black;
   font-family: "Lobster";
   border: none;
   font-size: 1.5rem;
-  text-decoration: underline;
+  text-decoration: none;
   width: 30%;
-  height: 50px;
+  height: 35px;
   margin: 0 auto;
 
   @media @mobile {
@@ -83,8 +72,6 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  color: @orange;
-  // background-color: @orange;
   @media @mobile {
     flex-direction: column-reverse;
   }
@@ -96,8 +83,6 @@ button {
     }
     button {
       font-size: 2rem;
-      // background-color: @orange;
-      // color: @white;
     }
   }
 
@@ -110,13 +95,10 @@ button {
 }
 
 .mdlSection {
-  color: @yellow;
-  // background-color: @blue;
   ul {
     font-size: 1.5rem;
     padding: 3% 20%;
     line-height: 3;
-
     @media @mobile {
       line-height: 1.5;
     }
@@ -138,43 +120,4 @@ button {
   margin: 0 auto;
   line-height: 1.6;
   font-size: 1.5rem;
-}
-// About page begins here
-
-.nav2 {
-  font-family: "Lobster";
-  text-align: center;
-  margin-top: 3%;
-  font-size: 2rem;
-}
-.Profile {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5%;
-  .Person {
-    width: 30%;
-    min-height: 70vh;
-    background: green;
-    color: white;
-    text-align: center;
-    border: 10px solid red;
-    border-radius: 25px;
-    font-size: 1.5rem;
-    font-family: "Lobster";
-
-    img {
-      width: 100%;
-      min-height: 50%;
-      border-radius: 25px;
-    }
-    p {
-      width: 70%;
-      padding: 1%;
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0 auto;
-      font-family: "Kalam";
-      font-size: 1.5rem;
-    }
-  }
 }
