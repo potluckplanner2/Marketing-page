@@ -8,8 +8,6 @@ body html {
 }
 button {
   text-align: center;
-  background-color: black;
-  color: white;
   font-family: "Lobster";
   border: none;
   font-size: 1.5rem;
@@ -17,6 +15,10 @@ button {
   width: 30%;
   height: 50px;
   margin: 0 auto;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 70%;
 }
 @media (max-width: 1000px) {
   button {
@@ -79,6 +81,7 @@ header nav button {
   text-decoration: none;
   color: #fff5d1;
   background-color: #ce6c47;
+  cursor: pointer;
 }
 .topContainer {
   width: 100%;
@@ -186,6 +189,7 @@ header nav button {
   background: transparent;
   color: #fff5d1;
   text-decoration: none;
+  cursor: pointer;
 }
 .Profile {
   display: flex;

@@ -24,9 +24,6 @@ body {
 
 button {
   text-align: center;
-  // display: block;
-  background-color: black;
-  color: white;
   font-family: "Lobster";
   border: none;
   font-size: 1.5rem;
@@ -34,6 +31,10 @@ button {
   width: 30%;
   height: 50px;
   margin: 0 auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 70%;
+  }
   @media @tablet {
     margin-top: 0%;
     width: 45%;
@@ -87,6 +88,7 @@ header {
       text-decoration: none;
       color: @white;
       background-color: @orange;
+      cursor: pointer;
     } //anchor ends here
   } //nav ends here
 } //header ends here
@@ -206,6 +208,7 @@ header {
     background: transparent;
     color: @white;
     text-decoration: none;
+    cursor: pointer;
   }
 }
 .Profile {
