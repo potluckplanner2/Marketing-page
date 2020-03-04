@@ -2,11 +2,10 @@ body {
   width: 100%;
   font-family: "Kalam";
   background-color: @white;
-  // h1,
-  // h2,
-  // h3 {
-  //   color: @red;
-  // }
+  // background-image: url(../img/backgroundimg.png);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
   html {
     font-size: 62.5%;
   }
@@ -21,20 +20,47 @@ body {
 @orange: #ce6c47;
 @yellow: #ffd046;
 @white: #fff5d1;
+@blue2: #382e7a;
+
+button {
+  text-align: center;
+  // display: block;
+  background-color: black;
+  color: white;
+  font-family: "Lobster";
+  border: none;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  @media @tablet {
+    margin-top: 0%;
+    width: 45%;
+  }
+  @media @mobile {
+    width: 100%;
+    margin-top: 0;
+    height: 70px;
+    // padding-top: 8%;
+  }
+}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Lobster";
-  // background-color: @blue;
+  background-color: @orange;
+  opacity: 95%;
+
   .logo {
     padding-left: 5%;
     display: flex;
-    // color: @yellow;
+    color: @white;
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -46,58 +72,52 @@ header {
       width: 80%;
     }
     button {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       text-decoration: none;
-      // color: black;
+      color: @white;
+      background-color: @orange;
     } //anchor ends here
   } //nav ends here
 } //header ends here
-
-button {
-  text-align: center;
-  // display: block;
-  background-color: @black;
-  color: white;
-  font-family: "Lobster";
-  border: none;
-  font-size: 1.5rem;
-  text-decoration: underline;
-  width: 30%;
-  height: 50px;
-  margin: 0 auto;
-
-  @media @mobile {
-    width: 100%;
-    margin-top: 0;
-    height: 70px;
-    padding-top: 8%;
-  }
-  @media @tablet {
-    margin-top: 0%;
-    width: 45%;
-  }
-}
 
 .topContainer {
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  color: @orange;
-  // background-color: @orange;
+  background-image: url(../img/backgroundimg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 40vh;
+  // color: @orange;
+  // background-color: @white;
   @media @mobile {
     flex-direction: column-reverse;
   }
   .half1 {
-    width: 50%;
+    width: 100%;
     font-size: 1.5rem;
+    color: @white;
+    font-size: 3rem;
+
+    h1 {
+      font-family: "Lobster";
+    }
     @media @mobile {
       width: 100%;
     }
     button {
-      font-size: 2rem;
+      font-size: 3.5rem;
       // background-color: @orange;
-      // color: @white;
+      color: @white;
+      height: 70px;
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
     }
   }
 
@@ -110,12 +130,15 @@ button {
 }
 
 .mdlSection {
-  color: @yellow;
+  // color: @yellow;
   // background-color: @blue;
+
   ul {
-    font-size: 1.5rem;
-    padding: 3% 20%;
+    font-size: 2.5rem;
+    padding: 0% 20%;
     line-height: 3;
+    text-decoration: underline;
+    color: #ce5c33;
 
     @media @mobile {
       line-height: 1.5;
@@ -127,6 +150,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    position: relative;
     @media @mobile {
       width: 100%;
     }
@@ -137,10 +161,21 @@ button {
   width: 85%;
   margin: 0 auto;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: @orange;
+
+  h2 {
+    font-family: "Lobster";
+  }
 }
 // About page begins here
-
+.bigS {
+  background-image: url(../img/Beerscheers.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-color: @orange;
+}
 .nav2 {
   font-family: "Lobster";
   text-align: center;

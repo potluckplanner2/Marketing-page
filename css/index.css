@@ -6,20 +6,46 @@ body {
 body html {
   font-size: 62.5%;
 }
+button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Lobster";
+  border: none;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  width: 30%;
+  height: 50px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  button {
+    margin-top: 0%;
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+    margin-top: 0;
+    height: 70px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Lobster";
-  background-color: #241e4e;
+  background-color: #ce6c47;
+  opacity: 95%;
 }
 header .logo {
   padding-left: 5%;
   display: flex;
-  color: #ffd046;
+  color: #fff5d1;
 }
 header .logo h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 header nav {
   width: 40%;
@@ -32,41 +58,21 @@ header nav {
   }
 }
 header nav button {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-decoration: none;
-}
-button {
-  text-align: center;
-  background-color: #241e4e;
-  color: #ffd046;
-  font-family: "Lobster";
-  border: none;
-  font-size: 1.5rem;
-  text-decoration: underline;
-  width: 30%;
-  height: 50px;
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  button {
-    width: 100%;
-    margin-top: 0;
-    height: 70px;
-    padding-top: 8%;
-  }
-}
-@media (max-width: 1000px) {
-  button {
-    margin-top: 0%;
-    width: 45%;
-  }
+  color: #fff5d1;
+  background-color: #ce6c47;
 }
 .topContainer {
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ce6c47;
+  background-image: url(../img/backgroundimg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 40vh;
 }
 @media (max-width: 500px) {
   .topContainer {
@@ -74,8 +80,13 @@ button {
   }
 }
 .topContainer .half1 {
-  width: 50%;
+  width: 100%;
   font-size: 1.5rem;
+  color: #fff5d1;
+  font-size: 3rem;
+}
+.topContainer .half1 h1 {
+  font-family: "Lobster";
 }
 @media (max-width: 500px) {
   .topContainer .half1 {
@@ -83,9 +94,15 @@ button {
   }
 }
 .topContainer .half1 button {
-  font-size: 2rem;
-  background-color: #ce6c47;
+  font-size: 3.5rem;
   color: #fff5d1;
+  height: 70px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 .topContainer img {
   width: 50%;
@@ -95,13 +112,12 @@ button {
     width: 100%;
   }
 }
-.mdlSection {
-  color: #ffd046;
-}
 .mdlSection ul {
-  font-size: 1.5rem;
-  padding: 3% 20%;
+  font-size: 2.5rem;
+  padding: 0% 20%;
   line-height: 3;
+  text-decoration: underline;
+  color: #ce5c33;
 }
 @media (max-width: 500px) {
   .mdlSection ul {
@@ -113,6 +129,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  position: relative;
 }
 @media (max-width: 500px) {
   .mdlSection img {
@@ -123,7 +140,18 @@ button {
   width: 85%;
   margin: 0 auto;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: #ce6c47;
+}
+.endSection h2 {
+  font-family: "Lobster";
+}
+.bigS {
+  background-image: url(../img/Beerscheers.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-color: #ce6c47;
 }
 .nav2 {
   font-family: "Lobster";
