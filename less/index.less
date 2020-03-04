@@ -53,11 +53,18 @@ header {
   font-family: "Lobster";
   background-color: @orange;
   opacity: 95%;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
 
   .logo {
     padding-left: 5%;
     display: flex;
     color: @white;
+    @media @mobile {
+      align-items: center;
+    }
 
     h2 {
       font-size: 2.5rem;
@@ -65,11 +72,15 @@ header {
   }
 
   nav {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
+    @media @tablet {
+      width: 50%;
+    }
     @media @mobile {
       width: 80%;
+      flex-direction: column;
     }
     button {
       font-size: 2.5rem;
@@ -139,6 +150,9 @@ header {
     line-height: 3;
     text-decoration: underline;
     color: #ce5c33;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: underline;
 
     @media @mobile {
       line-height: 1.5;
@@ -163,44 +177,69 @@ header {
   line-height: 1.6;
   font-size: 2.5rem;
   color: @orange;
+  text-align: center;
 
   h2 {
     font-family: "Lobster";
   }
 }
 // About page begins here
-.bigS {
-  background-image: url(../img/Beerscheers.png);
+.body2 {
+  background-image: url(../img/valley.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-color: @orange;
+  width: 100%;
 }
 .nav2 {
   font-family: "Lobster";
   text-align: center;
   margin-top: 3%;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: @white;
+
+  margin-top: 3%;
+  text-decoration: underline;
+
+  button {
+    font-size: 4rem;
+    background: transparent;
+    color: @white;
+    text-decoration: none;
+  }
 }
 .Profile {
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .Person {
     width: 30%;
     min-height: 70vh;
-    background: green;
-    color: white;
+    background: transparent;
+    color: @white;
     text-align: center;
-    border: 10px solid red;
-    border-radius: 25px;
-    font-size: 1.5rem;
+    border: 10px solid @white;
+    // border-radius: 25px;
+    font-size: 2rem;
     font-family: "Lobster";
+    @media @mobile {
+      width: 100%;
+    }
+
+    a {
+      color: white;
+    }
 
     img {
       width: 100%;
-      min-height: 50%;
-      border-radius: 25px;
+      // min-height: 50%;
+      // border-radius: 25px;
     }
     p {
       width: 70%;
@@ -209,7 +248,7 @@ header {
       font-weight: bold;
       margin: 0 auto;
       font-family: "Kalam";
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 }
