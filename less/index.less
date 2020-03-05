@@ -2,6 +2,8 @@ body {
   width: 100%;
   font-family: "Kalam";
   background-color: @white;
+  // border: 5px solid @red;
+
   // background-image: url(../img/backgroundimg.png);
   // background-repeat: no-repeat;
   // background-attachment: fixed;
@@ -60,11 +62,20 @@ header {
   }
 
   .logo {
-    padding-left: 5%;
+    // padding-left: 5%;
     display: flex;
     color: @white;
+    justify-content: space-evenly;
+    width: 30%;
     @media @mobile {
       align-items: center;
+      width: 100%;
+    }
+    i {
+      margin-top: 5%;
+      @media @tablet {
+        display: none;
+      }
     }
 
     h2 {
@@ -201,7 +212,9 @@ header {
   color: @white;
 
   margin-top: 3%;
-  text-decoration: underline;
+  h1 {
+    text-decoration: underline;
+  }
 
   button {
     font-size: 4rem;
@@ -231,6 +244,9 @@ header {
     // border-radius: 25px;
     font-size: 2rem;
     font-family: "Lobster";
+    div {
+      height: 75%;
+    }
     @media @mobile {
       width: 100%;
     }
